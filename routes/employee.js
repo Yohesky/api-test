@@ -2,7 +2,7 @@ const { Router } = require("express");
 const router = Router();
 
 const { check } = require("express-validator");
-const { validateFields } = require("../../../apis/backend/middlewares/validate-fields");
+const { validateFields } = require("../middlewares/validate-fields");
 const { updateEmployee, createEmployee, getEmployees, deleteEmployee } = require("../controllers/employee");
 
 
