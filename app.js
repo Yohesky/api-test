@@ -23,6 +23,6 @@ dbConnection()
 app.use("/api", require("./routes/employee"))
 
 
-app.listen( process.env.PORT, () => {
-    console.log("server running at", process.env.PORT)   
+app.listen( process.env.PORT || 8000, () => {
+    console.log("server running at", process.env.PORT || 8000)   
 })
